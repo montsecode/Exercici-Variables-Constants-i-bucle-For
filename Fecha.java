@@ -3,7 +3,7 @@ public class Fecha {
 
 	//Declaro variables Int
     int= dia= 8;
-    int= mes= "Julio";
+    int= mes= 7;
     int= año = 2020;
     	System.out.println ("+dia+"/"+mes+"/"+año+");
    }
