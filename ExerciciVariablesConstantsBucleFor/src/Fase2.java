@@ -10,29 +10,43 @@ resultant en una variable.
  * @author monts
  *
  */
+
+import java.util.Scanner;
 public class Fase2 {
 	
-
-	final int anio = 1948;
+	   final int anio = 1948;
 
 	public static void main(String[] args) {
 	
-		
+		//Los años son guardadas como variables
+		int anio = 1948;
 		int nacimientoanio = 1975;
-				
-		
+		//Comprobamos si el primer año introducido es bisiesto y mostramos los años
+		if ((anio % 4 == 0) && ((anio % 100 != 0) || (anio % 400 == 0))) {
+            for (int contador = anio; contador = nacimientoanio ; contador += 4) {
+                System.out.println(contador);
 			
-	
-		for (anio; anio<=nacimientoanio; anio++) {
-
-			if (((anio % 4 == 0) && ((anio % 100 != 0) || (anio % 400 == 0))) {
-						
+            }
+        //si no es bisiesto, entonces tenemos que trabajar de la siguiente forma
+		}else {
+		//Creamos una variable temporal para realizar la comparación en el bucle. 
+        // La inicializamos con el año de la primera fecha
+		int aniob = anio
+		//En cada paso por el bucle, aumentamos en uno la variable temporal. 
+		//La condición para seguir en el bucle es que el año de la variable 
+		 //temporal sea igual o inferior al añonacimiento
+			do {
+				aniob = aniob + 1;
+			}while ((aniob % 4 != 0) && ((aniob % 100 == 0) || (aniob % 400 != 0)));
+			
+			
+			//Con un bucle for, imprimimos los años: comenzamos con la variable 
+            // temporal, aumentamos 4 años y terminamos con el año de la fecha 2
+			for (int contador = anio; contador = nacimientoanio; contador += 4) {		
+				System.out.println(contador);
 					
-					
 	
-			System.out.println("El año es bisiesto");
-		else
-			System.out.println("El año no es bisiesto");
+			}
 		
 			
 		}

@@ -1,4 +1,4 @@
-/**
+/**Fase3
  * Partint de l’any 1948 heu de fer un bucle for i mostrar els anys de traspàs fins arriba al vostre any de
 naixement.
 ATENCIO! Haureu de canviar el tipus de variable de l’any 1948 per poder modificar-la.
