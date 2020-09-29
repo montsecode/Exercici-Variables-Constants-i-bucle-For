@@ -10,6 +10,8 @@ falsa mostrareu la frase pertinent. Creeu dues variables string per guardar les 
  *
  */
 public class Fase3 {
+	
+}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
