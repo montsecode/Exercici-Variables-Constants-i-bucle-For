@@ -23,13 +23,13 @@ public class Fase4 {
 		
 		
 		
-		int dia = 29;
-		int mes = 9;
-		int año = 20;
+		int dia = 14;
+		int mes = 5;
+		int año = 75;
 		
 		
 		System.out.println("El meu nom es " +Nom);
-		System.out.println("Vaig néixer el" +dia +"/" +mes+ "/" + año);	
+		System.out.println("Vaig néixer el " +dia +"/" +mes+ "/" + año);	
 		
 	}
 
