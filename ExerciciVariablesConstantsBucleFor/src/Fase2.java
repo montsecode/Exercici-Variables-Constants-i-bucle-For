@@ -26,8 +26,7 @@ public class Fase2 {
 		for (anio; anio<=nacimientoanio; anio++) {
 
 			if (((anio % 4 == 0) && ((anio % 100 != 0) || (anio % 400 == 0))) {
-				
-			
+						
 					
 					
 	

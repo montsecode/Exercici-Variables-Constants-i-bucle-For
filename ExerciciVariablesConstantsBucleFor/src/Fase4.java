@@ -20,16 +20,22 @@ public class Fase4 {
 
 		
 		String Nom = " Montse González Puentes";
-		
-		
-		
 		int dia = 14;
 		int mes = 5;
-		int año = 75;
+		int anio = 1975;
+		
 		
 		
 		System.out.println("El meu nom es " +Nom);
-		System.out.println("Vaig néixer el " +dia +"/" +mes+ "/" + año);	
+		System.out.println("Vaig néixer el " +dia +"/" +mes+ "/" + anio);	
+		
+		
+		if ((anio % 4 == 0 && anio % 100 != 0) || (anio % 100 == 0 && anio % 400 == 0)) {
+		  
+			System.out.println("El año " + anio + " es bisiesto");
+        } else {
+            System.out.println("El meu any de naixement " + anio + " no és bisiesto");
+        }
 		
 	}
 
