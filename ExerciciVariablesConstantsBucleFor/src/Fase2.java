@@ -13,9 +13,11 @@ resultant en una variable.
 public class Fase2 {
 	
 
+	final int anio = 1948;
+
 	public static void main(String[] args) {
 	
-		final int anio = 1948;
+		
 		int nacimientoanio = 1975;
 				
 		
