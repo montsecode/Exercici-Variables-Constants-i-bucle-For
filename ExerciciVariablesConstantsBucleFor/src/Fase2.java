@@ -11,10 +11,10 @@
  *
  */
 
-import java.util.Scanner;
+import java.util.*;
 public class Fase2 {
 	
-	Static final int anio = 1948;
+	 final int anio = 1948;
 
 	public static void main(String[] args) {
 	
