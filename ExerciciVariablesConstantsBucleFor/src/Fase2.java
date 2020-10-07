@@ -13,17 +13,17 @@
 
 import java.util.*;
 public class Fase2 {
-	
-	 final int anio = 1948;
+		//* Creeu una constant amb el valor de l’any (1948).
+	final static int anio = 1948;
 
 	public static void main(String[] args) {
 	
 		//Los años son guardadas como variables
-		int anio = 1948;
+		
 		int nacimientoanio = 1975;
 		//Comprobamos si el primer año  es bisiesto y mostramos los años
 		if ((anio % 4 == 0) && ((anio % 100 != 0) || (anio % 400 == 0))) {
-            for (int contador = anio; contador = nacimientoanio ; contador += 4) {
+            for (int contador = anio; contador > nacimientoanio ; contador += 4) {
                 System.out.println(contador);
 			
             }
@@ -45,7 +45,7 @@ public class Fase2 {
 			
 			//Con un bucle for, imprimimos los años: comenzamos con la variable 
             // temporal, aumentamos 4 años y terminamos con el año de la fecha nacimiento
-			for (int contador = aniob; contador = nacimientoanio; contador += 4) {		
+			for (int contador = aniob; contador > nacimientoanio; contador += 4) {		
 				System.out.println(contador);
 					
 	
