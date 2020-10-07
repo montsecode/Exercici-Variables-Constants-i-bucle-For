@@ -5,7 +5,6 @@ ATENCIO! Haureu de canviar el tipus de variable de l’any 1948 per poder modifi
 ● Creeu una variable bool que sera certa si l’any de naixement és de traspàs o falsa si no ho és.(0,75 punts)
 ● En cas de que la variable bool sigui certa, heu de mostrar per consola una frase on ho digui, en cas de ser
 falsa mostrareu la frase pertinent. Creeu dues variables string per guardar les frases. (1,5 punts)
-
  * @author monts
  *
  */

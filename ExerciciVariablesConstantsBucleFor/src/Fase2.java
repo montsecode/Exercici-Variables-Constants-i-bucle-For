@@ -11,54 +11,60 @@
  *
  */
 
-import java.util.*;
+
 public class Fase2 {
 		//* Creeu una constant amb el valor de l’any (1948).
 	final static int anio = 1948;
 
 	public static void main(String[] args) {
 	
-		//Los años son guardadas como variables
+		// Creeu una variable( anio1) que guardi cada quan hi ha un any de traspàs= anio1.
+		/**
+		 * Recursos
+		 *https://stackoverflow.com/questions/1021324/java-code-for-calculating-leap-year
+		 *Year isLeap() method in Java with Syntax:public boolean isLeap()métode any traspas 
+		 *isLeap() =(https://www.geeksforgeeks.org/year-isleap-method-in-java-with-examples/)
+		 */
 		
-		int nacimientoanio = 1975;
-		//Comprobamos si el primer año  es bisiesto y mostramos los años
-		if ((anio % 4 == 0) && ((anio % 100 != 0) || (anio % 400 == 0))) {
-            for (int contador = anio; contador > nacimientoanio ; contador += 4) {
-                System.out.println(contador);
-			
-            }
-            
-            
-        //si no es bisiesto creamos  variable temporal para comparación en el bucle
-		}else {
-		 
-        // La inicializamos la variable temporal con el año de la primera fecha
-		int aniob = anio;
-		
-		//En cada paso por el bucle, aumentamos en uno la variable temporal. 
-		//La condición para seguir en el bucle es que el año de la variable 
-		 //temporal sea igual o inferior al añonacimiento
-			do {
-				aniob = aniob + 1;
-			} while ((aniob % 4 != 0) && ((aniob % 100 == 0) || (aniob % 400 != 0)));
-			
-			
-			//Con un bucle for, imprimimos los años: comenzamos con la variable 
-            // temporal, aumentamos 4 años y terminamos con el año de la fecha nacimiento
-			for (int contador = aniob; contador > nacimientoanio; contador += 4) {		
-				System.out.println(contador);
-					
+		final boolean anio1 = isLeap(anio);
+        System.out.println("Valor de la variable esanydeTraspas: " + anio1);
+	}
+
+	private static boolean isLeap(int anio2) {
+		// TODO Auto-generated method stub
+		return anio2 % 4 == 0 && anio2 % 100 != 0 || anio2 % 400 == 0;
+	}
 	
-			}
-		
-			
-		}
-			
-    }			
-		
+
+		// Calculeu quants anys de traspàs= anioT  hi ha entre 1948 i el vostre any de naixement i emmagatzemeu el valor
+		//resultant en una variable.
+	
+	int anysdeTraspas = anioT(1975);
+	
+
+	public static int anioT(final int anio3) {
+
+		int contador = 0;
+
+		for (int i = anio3; i > anio; i--) {
+        if (isLeap(i)) {
+            contador++;
+        }
+     
+    }
+
+    return contador;
+    
+	}
+	
+	
 }
+
+//* Mostreu per pantalla el resultat del càlcul
+// Calculeu quants anys de traspàs hi ha entre 1948 i el vostre any de naixement i emmagatzemeu el valor
+//resultant en una variable.
+
+/** No se incluir esta impresión por pantall en el lugar correcto
+ * System.out.println("Hi ha " + anysdeTraspas + " anys de traspàs entre 1975 i " + anio);
+ */
 	
-	
-
-
-
