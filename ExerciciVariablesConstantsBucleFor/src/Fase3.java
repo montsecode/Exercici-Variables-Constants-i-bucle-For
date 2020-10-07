@@ -10,7 +10,7 @@ falsa mostrareu la frase pertinent. Creeu dues variables string per guardar les 
  */
 public class Fase3 {
 	
-}
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -19,16 +19,27 @@ public class Fase3 {
 	int anio = 1948;
 	int nacimientoanio = 1975;
 	
-	for (anio; anio<=nacimientoanio; anio++) {
+	// Partint de l’any 1948 heu de fer un bucle for i mostrar els anys de traspàs fins arriba al vostre any de
+	//naixement.
+	
+	
+	
+	for (int anio1=anio; anio1<=nacimientoanio;  anio1 ++) {
 
-		if (((anio % 4 == 0) && ((anio % 100 != 0) || (anio % 400 == 0))) {
+		     if((( anio1%4==0)) && ((anio1 % 100 != 0) || (anio1 % 400 == 0))) {
+		    	 
+		     
+
+           	
+               System.out.println("Mostrar els anys de traspàs entre " + anio + " i " + nacimientoanio + ":");
 			
-			
-		System.out.println("El año es bisiesto");
-		else
-		System.out.println("El año no es bisiesto");
-		}
-			
+	     }
+	
+	  }
+	 
+	
 	}
+			
+	
+	
 
-}
